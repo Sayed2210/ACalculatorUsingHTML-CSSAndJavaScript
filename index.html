@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--MY Framework-->
+    <link rel="stylesheet" href="/CSS/framework.css">
+    <!--Main Style CSS-->
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Create body-->
+    <div class="container bg-black center-flex w-full h-full">
+        <div class="calculator center-flex">
+            <form class="bg-pink rad-10 p-20">
+                <div class="display d-flex end-flex">
+                  <input type="text" name="display" class="bg-pink p-15 border-2 rad-6">  
+                </div>                
+                <div class="d-flex align-center">
+                    <input type="button" value="AC" class="bg-purple c-pink m-10 rad-6" onclick="display.value = '' ">
+                    <input type="button" value="DEL" class="bg-purple c-pink m-10 rad-6" onclick="display.value = display.value.toString().slice(0,-1) ">
+                    <input type="button" value="." class="bg-purple c-pink m-10 rad-6" onclick="display.value += '.' ">
+                    <input type="button" value="/" class="bg-purple c-pink m-10 rad-6" onclick="display.value += '/' ">
+                </div>
+                <div class="d-flex align-center">
+                    <input type="button" value="7" class="bg-purple c-pink m-10 rad-6" onclick="display.value += '7' ">
+                    <input type="button" value="8" class="bg-purple c-pink m-10 rad-6" onclick="display.value += '8' ">
+                    <input type="button" value="9" class="bg-purple c-pink m-10 rad-6" onclick="display.value += '9' ">
+                    <input type="button" value="*" class="bg-purple c-pink m-10 rad-6" onclick="display.value += '*' ">
+                </div>
+                <div class="d-flex align-center">
+                    <input type="button" value="4" class="bg-purple c-pink m-10 rad-6" onclick="display.value += '4' ">
+                    <input type="button" value="5" class="bg-purple c-pink m-10 rad-6" onclick="display.value += '5' ">
+                    <input type="button" value="6" class="bg-purple c-pink m-10 rad-6" onclick="display.value += '6' ">
+                    <input type="button" value="-" class="bg-purple c-pink m-10 rad-6" onclick="display.value += '-' ">
+                </div>
+                <div class="d-flex align-center">
+                    <input type="button" value="1" class="bg-purple c-pink m-10 rad-6" onclick="display.value += '1' ">
+                    <input type="button" value="2" class="bg-purple c-pink m-10 rad-6" onclick="display.value += '2' ">
+                    <input type="button" value="3" class="bg-purple c-pink m-10 rad-6" onclick="display.value += '3' ">
+                    <input type="button" value="+" class="bg-purple c-pink m-10 rad-6" onclick="display.value += '+' ">
+                </div>
+                <div class="d-flex align-center">
+                    <input type="button" value="0" class="bg-purple c-pink m-10 rad-6" onclick="display.value = '0' ">
+                    <input type="button" value="00" class="bg-purple c-pink m-10 rad-6" onclick="display.value = '00' ">
+                    <input type="button" value="=" class="bg-purple c-pink m-10 rad-6" onclick="display.value = eval(display.value) ">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
