@@ -17,6 +17,7 @@ input {
     flex-grow: 1;
     font-size: 1.5em;
     color: #5800FF;
+    text-align: right;
 }
 .container .calculator form div:last-of-type input:last-of-type {
     flex-grow: 1;
